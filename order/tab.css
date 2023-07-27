@@ -46,39 +46,39 @@ body {
 .option-bar {
     position: relative;
     text-align: center;
-    justify-content: center;
+    justify-content:space-around;
     margin: 0 2px;
     padding-bottom: 20px;
     height: 79px;
 }
 
-.option-bar ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
 .item {
-    width: 100px;
-    height: 40px;
-    margin: 0 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
+    float: left;
     text-align: center;
+    width: 25%;
+    cursor: pointer;
 }
 
-.item.active {
-    width: 100px;
-    height: 40px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-bottom: 3px solid orange;
-    border-radius: 3px;
-    animation: move;
-    animation-duration: 2s;
-    transition: all 0.3s;
+.active:nth-child(2)~hr {
+    margin-left: 25%;
+}
+
+.active:nth-child(3)~hr {
+    margin-left: 50%;
+}
+
+.active:nth-child(4)~hr {
+    margin-left: 75%;
+}
+
+ul hr {
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
 }
 
 .card-list {
@@ -99,5 +99,4 @@ body {
 .card.active {
     opacity: 1;
     display: block;
-}
 }
