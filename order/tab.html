@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tab.css">
+
+    <title>订单记录</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <span class="order-title">订单记录</span>
+        </div>
+        <div class="search">
+            <img class="search-icon" src="images/Search.png" alt="search-icon">
+            <input class="order-number" type="text" placeholder="输入订单号">
+        </div>
+        <div class="option-bar">
+            <ul>
+                <li class="item active">
+                    全部
+                </li>
+                <li class="item">
+                    进行中
+                </li>
+                <li class="item">
+                    已完成
+                </li>
+                <li class="item">
+                    已解约
+                </li>
+            </ul>
+        </div>
+        <div class="card-list">
+            <div class="card active">
+                <div>订单编号</div>
+                <div>服务名称1 </div>
+            </div>
+            <div class="card">
+                <div>订单编号</div>
+                <div>服务名称2 </div>
+            </div>
+            <div class="card">
+                <div>订单编号</div>
+                <div>服务名称3 </div>
+            </div>
+            <div class="card">
+                <div>订单编号</div>
+                <div>服务名称4</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 获取要操作的元素
+    const items = document.querySelectorAll('.item');
+    const cards = document.querySelectorAll('.card');
+
+    // 移除选中态
+    function removeActive() {
+        // 移除标签选中态样式
+        items.forEach(item => {
+            item.classList.remove('active');
+        });
+        // 移除内容区选中态样式
+        cards.forEach(item => {
+            item.classList.remove('active');
+        });
+    }
+
+    // 遍历所有标签
+    items.forEach((item, index) => {
+        // 为每个标签绑定点击事件
+        item.addEventListener('click', function () {
+            // 移除选中态样式
+            removeActive();
+            // 为当前标签添加选中样式
+            item.classList.add('active');
+            // 为当前内容区添加选中样式
+            cards[index].classList.add('active');
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,126 @@
+body {
+    height: 788px;
+    width: 498px;
+    background-color: rgb(190, 172, 172);
+    max-width: 900px;
+    margin: 2em auto;
+}
+header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px;
+}
+.container{
+    height: 788px;
+    width: 498px;
+    background-color: rgba(247, 247, 247, 0.911);
+}
+.shop{
+    height: 70px;
+    width: 498px;
+    margin: 5px auto;
+}
+img{
+    float: left;
+    width: 6%;
+    border-radius: 100%;
+    padding:10px;
+    margin: 10px;
+    background-color: rgb(39, 190, 39);
+
+}
+.name{
+    color: black;
+    font-size: 20px;
+}
+.type{
+    border-radius: 5px;
+    padding: 2px 3px 2px;
+    margin-top: 3px;
+    width:25px;
+    font-size: 5px;
+    background-color: rgb(206, 206, 206);
+    color: white;
+    float:left;
+}
+.tip{
+    color: rgb(140, 140, 140);
+    float:left;
+    padding: 2px 3px 2px;
+    width: 100px;
+}
+.cost{
+    float: left;
+    width: 445px;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+}
+.money{
+    color: rgb(140, 140, 140);
+    float: left;
+    width: 400px;
+}
+.remark{
+    float: left;
+    color: rgb(78, 78, 232);
+}
+.icon{
+    color:black;
+    font-size: 20px;
+    float: right;
+    width: 20px;
+}
+.box1{
+    padding: 5px;
+    float:left;
+    width: 83%;
+}
+.box2{
+    align-content: center;
+    font-size: 30px;
+    color: rgb(85, 83, 83);
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows:60px 60px 60px;
+  }
+  
+.box > div {
+    padding-left: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(221, 235, 240);
+}
+
+.number{
+    font-size: 30px;
+    color: rgb(85, 83, 83);
+}
+.zero{
+    font-size: 30px;
+    color: rgb(85, 83, 83);
+}
+.delete{
+    width:100px;
+    height:400px;
+}
+.remark{
+    padding-left: 25px;
+}
+footer{
+    float: inline-end;
+}
+.shouqianba{
+    font-size: 10px;
+    color: #b2b2b2;
+    text-align: right;
+    padding-right: 10px;
+}
+a{
+    font-weight: bold;
+    color: #616161;
+}
+sup {
+    color: #616161;
+}
