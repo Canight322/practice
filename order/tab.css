@@ -1,28 +1,32 @@
-body{
+body {
     padding-top: 20px;
 }
-.title{
+
+.title {
     width: 100%;
     height: 50px;
 
 }
-.order-title{
+
+.order-title {
     text-align: center;
 }
-.search{
+
+.search {
     width: 100%;
     height: 50px;
     font-size: 20px;
 }
 
-.search-icon{
+.search-icon {
     position: absolute;
     padding-top: 10px;
     padding-left: 180px;
     width: 20px;
-    height:20px;
+    height: 20px;
 }
-.order-number{
+
+.order-number {
     width: 90%;
     margin: 0px 20px 0px;
     height: 40px;
@@ -32,26 +36,30 @@ body{
     text-align: center;
     color: rgb(0, 0, 0);
 }
-::placeholder{
+
+::placeholder {
     color: rgb(200, 200, 200);
     font-size: 13px;
     text-align: center;
 }
-.option-bar{  
-    position:relative;
+
+.option-bar {
+    position: relative;
     text-align: center;
     justify-content: center;
-    align-items: center;
     margin: 0 2px;
     padding-bottom: 20px;
     height: 79px;
 }
-.option-bar ul{ 
+
+.option-bar ul {
     display: flex;
     list-style: none;
+    justify-content: space-around;
 }
-.item{
-    width:100px;
+
+.item {
+    width: 100px;
     height: 40px;
     margin: 0 5px;
     cursor: pointer;
@@ -59,28 +67,36 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    cursor: pointer;
-}
-.item.active{
-    border-bottom: 3px solid orange;
-    border-radius: 3px;
-    display: block;
 }
 
-.card-list{
+.item.active {
+    width: 100px;
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-bottom: 3px solid orange;
+    border-radius: 3px;
+    animation: move;
+    animation-duration: 2s;
+    transition: all 0.3s;
+}
+
+.card-list {
     width: 90%;
     margin: 0px 20px 0px;
 
 }
-.card{
-      height: 150px;
-      background-color: blanchedalmond;
-      border-style: none;
-      border-radius: 5px;
-      padding: 20px;
-      display: none;
+
+.card {
+    height: 150px;
+    background-color: blanchedalmond;
+    border-style: none;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
 }
-.card.active{
+
+.card.active {
     opacity: 1;
     display: block;
 }
