@@ -1,6 +1,4 @@
-body {
-    padding-top: 20px;
-}
+body {}
 
 .title {
     width: 100%;
@@ -45,10 +43,7 @@ body {
 
 .option-bar {
     position: relative;
-    text-align: center;
-    justify-content:space-around;
-    margin: 0 2px;
-    padding-bottom: 20px;
+    align-items: center;
     height: 79px;
 }
 
@@ -57,7 +52,12 @@ body {
     float: left;
     text-align: center;
     width: 25%;
+    color: rgb(155, 155, 155);
     cursor: pointer;
+}
+
+.item.active {
+    color: black;
 }
 
 .active:nth-child(2)~hr {
@@ -76,27 +76,63 @@ ul hr {
     height: .25rem;
     width: 25%;
     margin: 0;
-    background: tomato;
+    background: orange;
     border: none;
+    border-radius: 10px 10px 0px 0px;
     transition: .3s ease-in-out;
 }
 
 .card-list {
-    width: 90%;
-    margin: 0px 20px 0px;
+    position: absolute;
+    align-items: center;
+    display: none;
+    background-color: whitesmoke;
+}
 
+.card-list.active {
+    display: block;
 }
 
 .card {
-    height: 150px;
-    background-color: blanchedalmond;
+    width: 90%;
+    position: relative;
+    display: inline-block;
+    background-color: white;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
-    display: none;
+    margin: 20px 10px 10px 20px;
 }
 
-.card.active {
-    opacity: 1;
-    display: block;
+.word {
+    font-size: 15px;
+    flex: 2;
+    flex-wrap: nowrap;
+}
+
+.ongoing {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 2px 8px 2px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #e1faeb;
+    color: rgb(50, 203, 50);
+    font-size: 5px;
+    font-weight: bold;
+
+}
+
+.completed,.terminated {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 2px 8px 2px;
+    border-style: none;
+    border-radius: 20px;
+    background-color:gainsboro;
+    color: grey;
+    font-size: 5px;
+    font-weight: bold;
 }

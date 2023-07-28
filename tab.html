@@ -32,60 +32,115 @@
                 <li class="item">
                     已解约
                 </li>
-                <hr/>
+                <hr />
             </ul>
-            
-            
+        </div>
+        <div class="card-list active">
+            <div class="card">
+                <div class="word">
+                    <div>订单编号1</div>
+                    <div>订单创建时间:</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="ongoing">进行中</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>分6月</div>
+                <div>总计¥120</div>
+            </div>
+            <div class="card">
+                <div class="word">
+                    <div>订单编号2</div>
+                    <div>订单创建时间：</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="ongoing">进行中</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>分6月</div>
+                <div>总计¥120</div>
+            </div>
+            <div class="card">
+                <div class="word">
+                    <div>订单编号3</div>
+                    <div>订单创建时间：</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="completed">已完成</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>分6月</div>
+                <div>总计¥120</div>
+            </div>
+            <div class="card">
+                <div class="word">
+                    <div>订单编号4</div>
+                    <div>订单创建时间:</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="terminated">已解约</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>优惠¥2</div>
+                <div>总计¥120</div>
+            </div>
         </div>
         <div class="card-list">
-            <div class="card active">
-                <div>订单编号</div>
-                <div>服务名称1 </div>
+            <div class="card">
+                <div class="word">
+                    <div>订单编号1</div>
+                    <div>订单创建时间:</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="ongoing">进行中</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>分6月</div>
+                <div>总计¥120</div>
             </div>
             <div class="card">
-                <div>订单编号</div>
-                <div>服务名称2 </div>
+                <div class="word">
+                    <div>订单编号2</div>
+                    <div>订单创建时间：</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="ongoing">进行中</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>分6月</div>
+                <div>总计¥120</div>
             </div>
+        </div>
+        <div class="card-list">
             <div class="card">
-                <div>订单编号</div>
-                <div>服务名称3 </div>
+                <div class="word">
+                    <div>订单编号3</div>
+                    <div>订单创建时间：</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="completed">已完成</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>分6月</div>
+                <div>总计¥120</div>
             </div>
+        </div>
+        <div class="card-list">
             <div class="card">
-                <div>订单编号</div>
-                <div>服务名称4</div>
+                <div class="word">
+                    <div>订单编号4</div>
+                    <div>订单创建时间:</div>
+                    <div>服务名称：半年健身卡 </div>
+                </div>
+                <span class="terminated">已解约</span>
+                <hr />
+                <div>已付¥40</div>
+                <div>优惠¥2</div>
+                <div>总计¥120</div>
             </div>
         </div>
     </div>
 </body>
-<script>
-    // 获取要操作的元素
-    const items = document.querySelectorAll('.item');
-    const cards = document.querySelectorAll('.card');
-
-    // 移除选中态
-    function removeActive() {
-        // 移除标签选中态样式
-        items.forEach(item => {
-            item.classList.remove('active');
-        });
-        // 移除内容区选中态样式
-        cards.forEach(item => {
-            item.classList.remove('active');
-        });
-    }
-
-    // 遍历所有标签
-    items.forEach((item, index) => {
-        // 为每个标签绑定点击事件
-        item.addEventListener('click', function () {
-            // 移除选中态样式
-            removeActive();
-            // 为当前标签添加选中样式
-            item.classList.add('active');
-            // 为当前内容区添加选中样式
-            cards[index].classList.add('active');
-        })
-    })
-</script>
+<script src="tab.js"></script>
 
 </html>
