@@ -1,0 +1,103 @@
+body{
+    background-color: whitesmoke;
+}
+h1{
+    text-align: center;
+    font-size: 22px;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+}
+.content{
+    height: 100%;
+    width: 100%;
+}
+form{
+    padding: 10px 0;
+}
+label{
+    margin-bottom: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+span{
+    width: 20%;
+    height: 100%;  
+    padding: 10px;
+    font-size: 18px;
+}
+input{
+    width: 80%;
+    border:none;
+    padding:10px;
+    position: relative;
+    float: right;
+    text-align: right;
+    
+}
+select{
+    width: 70%;
+    padding: 10px 5px;
+    text-align: right;
+    border: none;
+    
+}
+
+
+.tip{
+    text-align: left;
+    padding: 5px 10px 20px;
+    margin: 5px 0;
+    color: grey;
+    font-size: 13px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(222, 183, 85);
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+.popup{
+    width: 60%;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 30px 30px;
+    text-align: center;
+    color: #333;
+    visibility: hidden;
+}
+.popup.active{
+    visibility: visible;
+}
+.popup h2{
+    font-size: 20px;
+    margin: 20px 0 40px 20px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd549;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
