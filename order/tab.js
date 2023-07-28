@@ -1,6 +1,6 @@
 // 获取要操作的元素
 const items = document.querySelectorAll('.item');
-const cards = document.querySelectorAll('.card');
+const card_lists = document.querySelectorAll('.card-list');
 
 // 移除选中态
 function removeActive() {
@@ -9,7 +9,7 @@ function removeActive() {
         item.classList.remove('active');
     });
     // 移除内容区选中态样式
-    cards.forEach(item => {
+    card_lists.forEach(item => {
         item.classList.remove('active');
     });
 }
@@ -20,9 +20,11 @@ items.forEach((item, index) => {
     item.addEventListener('click', function () {
         // 移除选中态样式
         removeActive();
+        
         // 为当前标签添加选中样式
         item.classList.add('active');
         // 为当前内容区添加选中样式
-        cards[index].classList.add('active');
+        card_lists[index].classList.add('active');
     })
+    
 })
