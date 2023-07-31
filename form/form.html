@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="form.css">
-
     <title>表单</title>
 </head>
 
@@ -14,28 +13,36 @@
         <form>
             <label>
                 <span>课时名称</span>
-                <input type="text"></label>
+                <input type="text" id="classname">
+            </label>
             <label>
                 <span>课时</span>
-                <input type="text"></label>
+                <input type="text" id="duration">
+            </label>
             <div class="tip">设置课时后，学员付费后自动添加课时。</div>
             <label>
                 <span>价格（元）</span>
-                <input type="text"></label>
-            <div class="tip">设置价格后，学员在收款单选择改课程时，自动显示待付款金额；否则，学员需手动输入付款金额。</div>
+                <input type="text" id="price">
+            </label>
+            <div class="tip">设置价格后，学员在收款单选择改课程时，自动显示待付款金额；否则，学员需手动输入付款金额。
+            </div>
             <label>
                 <span>课程状态</span>
-                <select>
-                    <option value="online">上线</option>
-                    <option value="offline">下线</option>
+                <select id="state">
+                    <option value="上线">上线</option>
+                    <option value="下线">下线</option>
                 </select>
             </label>
             <div class="tip">设置为上线后，学员可在付款单中选择该课程，下线后学员不可选择该课程。</div>
         </form>
-        <button type="submit" class="btn" onclick="openPopup()">保存</button>
-        <div class="popup">
+        <button type="button" class="btn" onclick="openPopup()">保存</button>
+        <div class="success">
             <h2>提交成功！</h2>
-            <button type="button" onclick="closePopup()">好的</button>
+            <button type="button" onclick="closeSuccess()">好的</button>
+        </div>
+        <div class="fail">
+            <h2>提交失败！请完整填写表格内容。</h2>
+            <button type="button" onclick="closeFail()">好的</button>
         </div>
     </div>
 </body>

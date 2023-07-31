@@ -69,7 +69,7 @@ button{
     color: white;
     cursor: pointer;
 }
-.popup{
+.success{
     width: 60%;
     background: white;
     border-radius: 5px;
@@ -82,14 +82,49 @@ button{
     color: #333;
     visibility: hidden;
 }
-.popup.active{
+.success.active{
     visibility: visible;
 }
-.popup h2{
+.success h2{
     font-size: 20px;
     margin: 20px 0 40px 20px;
 }
-.popup button{
+.success button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd549;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.fail {
+    width: 60%;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 30px 30px;
+    text-align: center;
+    color: #333;
+    visibility: hidden;
+}
+
+.fail.active {
+    visibility: visible;
+}
+
+.fail h2 {
+    font-size: 20px;
+    margin: 20px 0 40px 20px;
+}
+
+.fail button {
     width: 100%;
     margin-top: 50px;
     padding: 10px 0;
